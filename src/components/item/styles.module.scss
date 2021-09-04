@@ -1,0 +1,43 @@
+.media {
+	display: flex;
+
+	h4 {
+		margin: 0px;
+	}
+	.media-left {
+		flex: none;
+		width: 130px;
+
+		figure {
+			margin: 0px;
+		}
+		.image {
+			width: 120px;
+			height: 80px;
+			overflow: hidden;
+			border-radius: 4px;
+		}
+	}
+	.media-content {
+		flex-grow: 1;
+	}
+
+	&.is-horizontal {
+		display: flex;
+	}
+
+	&.is-vertical {
+		flex-direction: column;
+		.media-left {
+			width: 100%;
+
+			.image {
+				width: 100%;
+				height: 200px;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
